@@ -1,0 +1,22 @@
+.footer{
+    margin-top: 3%;
+    height: 300px;
+    background-color: #41503e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+.footerSocialMedias{
+    text-align: center;
+}
+.footerSocialMedias div{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 15%;
+}
+.footerDerechos{
+    border-top: 1px solid #767a63;
+    text-align: center;
+}
