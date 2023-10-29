@@ -1,39 +1,12 @@
 .fondoHeader{
-    background: url(/imageFondo.png) 0px 0px / 100% 100vh no-repeat;
-    width: 1912px;
-    height: 966px;
-}
-.buttonInteractive{
-    width: 130px;
-    height: 50px;
-    border-radius: 30px;
-    background: linear-gradient(0deg, rgba(217, 217, 217, 0.65) 0%, rgba(217, 217, 217, 0.65) 100%), #FD0000;
-    mix-blend-mode: luminosity;
-    cursor: pointer;
-    font-size: 20px;
-}
-.navBarHeaderSection{
-    display: flex;
-    justify-content: flex-end;
-    padding: 2%;
-}
-.navBarHeaderSectionArticleButtons{
-    display: flex;
-    justify-content: space-between;
-    width: 17%;
-}
-.buttonExitHeader{
-    margin-top: 40%;
-}
-.exitHeader{
-    width: 0;
-    height: 0;
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
-    border-top: 60px solid #a7ebad;
-    cursor: pointer;
+    width: 80%;
     margin: auto;
+}   
+.fondoHeader div{
+    align-items: center;
+    text-align: center;
 }
-.exitHeader:hover{
-    transform: translateY(5px);
+.fondoHeader img{
+    width: 100%;
+    border-radius: 50px;
 }

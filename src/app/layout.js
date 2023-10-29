@@ -1,7 +1,4 @@
-
 import './globals.css'
-
-
 
 export const metadata = {
   title: 'Green Love',

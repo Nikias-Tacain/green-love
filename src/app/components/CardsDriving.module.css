@@ -1,0 +1,28 @@
+.containerSectionDriving{
+    width: 80%;
+    margin: auto;
+    height: 175px;
+    display: flex;
+    justify-content: space-around;
+}
+.containerSectionDrivingSelectorDiv{
+    padding: 5%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containerSectionDrivingSelectorDiv div{
+    display: flex;
+    gap: 15px;
+}
+.containerSectionDrivingSelectorDiv div img{
+    width: 30px;
+}
+@media screen and (max-width: 900px) {
+    .quitComponentMobile{
+        display: none;
+    }
+}

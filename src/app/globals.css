@@ -3,6 +3,7 @@ body{
   padding: 0;
   border: 0;
   scroll-behavior: smooth;
+  background-color: #89887c;
 }
 a {
   color: inherit;
