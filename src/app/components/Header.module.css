@@ -6,6 +6,9 @@
     align-items: center;
     text-align: center;
 }
+.fondoHeader div p{
+    font-size: 1.30rem;
+}
 .fondoHeader img{
     width: 100%;
     border-radius: 50px;

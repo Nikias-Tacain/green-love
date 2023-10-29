@@ -21,8 +21,16 @@
 .containerSectionDrivingSelectorDiv div img{
     width: 30px;
 }
+@media screen and (max-width: 1350px) {
+    .quitComponentMobile2{
+        display: none;
+    }
+}
 @media screen and (max-width: 900px) {
-    .quitComponentMobile{
+    .quitComponentMobile1{
+        display: none;
+    }
+    .quitComponentMobile2{
         display: none;
     }
 }
