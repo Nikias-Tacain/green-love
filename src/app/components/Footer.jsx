@@ -18,7 +18,7 @@ export default function Footer() {
             <article>
                 <p>2364358085</p>
                 <p>matomasone@hotmail.com</p>
-                <p>Juan Narbondo 390 "2"</p>
+                <p>Juan Narbondo 390 &quot2&quot</p>
             </article>
         </section>
         <section className={styles.footerDerechos}>
