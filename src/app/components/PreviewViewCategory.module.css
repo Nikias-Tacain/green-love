@@ -13,7 +13,9 @@
 }
 .containerPreviewViewCategorySelector img{
     width: 100%;
+    height: auto;
     border-radius: 40px;
+    object-fit: cover;
 }
 .containerPreviewViewCategorySelectorDiv{
     width: 30%;
@@ -35,11 +37,16 @@
 .containerPreviewViewCategorySelectorDiv button:hover{
     background-color: rgba(50, 228, 80, 0.5);
 }
+.textPreviewViewCategory{
+    text-align: center;
+}
 .imageEnvios{
-    width: 80%;
-    height: 520px;
-    margin: auto;
     margin-top: 2%;
+}
+.imageEnvios img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 @media screen and (max-width: 1300px) {
     .quitComponentMobile2{

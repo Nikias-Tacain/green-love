@@ -1,5 +1,5 @@
 .footer{
-    margin-top: 3%;
+    margin-top: 2%;
     height: 300px;
     background-color: #41503e;
     display: flex;
@@ -19,4 +19,7 @@
 .footerDerechos{
     border-top: 1px solid #767a63;
     text-align: center;
+}
+.imgFooter{
+    width: 1%;
 }
