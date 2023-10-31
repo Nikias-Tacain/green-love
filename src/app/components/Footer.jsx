@@ -18,7 +18,7 @@ export default function Footer() {
             <article>
                 <p><img src="/phone-solid.svg" alt="" className={styles.imgFooter}/> 2364358085</p>
                 <p><img src="/envelope-solid.svg" alt="" className={styles.imgFooter}/> matomasone@hotmail.com</p>
-                <p><img src="/house-solid.svg" alt="" className={styles.imgFooter}/> Juan Narbondo 390 \'2\'</p>
+                <p><img src="/house-solid.svg" alt="" className={styles.imgFooter}/> Juan Narbondo 390 &apos;2&apos;</p>
             </article>
         </section>
         <section className={styles.footerDerechos}>
