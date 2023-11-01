@@ -1,7 +1,7 @@
 .containerSectionDriving{
     width: 80%;
     margin: auto;
-    height: 175px;
+    height: 150px;
     display: flex;
     justify-content: space-around;
 }
@@ -24,6 +24,9 @@
 @media screen and (max-width: 1350px) {
     .quitComponentMobile2{
         display: none;
+    }
+    .containerSectionDriving{
+        height: 130px;
     }
 }
 @media screen and (max-width: 900px) {

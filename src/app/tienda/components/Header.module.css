@@ -1,0 +1,29 @@
+.headerTienda{
+    background-color: rgba(150, 146, 146, 0.5); /* Color rojo con 50% de opacidad */
+    backdrop-filter: blur(50px); /* Efecto de desenfoque */
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    align-items: center;
+    padding: 1rem;
+}
+.HeaderTiendaNavBarSection{
+    width: 30%;
+}
+.HeaderTiendaNavBarSectionList{
+    display: flex;
+    justify-content: space-around;
+}
+.HeaderTiendaNavBarSectionList li{
+    padding: 15px 15px;
+    font-size: 20px;
+    border: 1px green solid;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.HeaderTiendaNavBarSectionList li:hover{
+    background-color: rgba(50, 228, 80, 0.5);
+}

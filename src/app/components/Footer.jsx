@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id='footer'>
         <section className={styles.footerSocialMedias}>
             <h4>Contactanos</h4>
             <div>

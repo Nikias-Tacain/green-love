@@ -1,5 +1,4 @@
 .footer{
-    margin-top: 2%;
     height: 300px;
     background-color: #41503e;
     display: flex;
@@ -22,4 +21,17 @@
 }
 .imgFooter{
     width: 1%;
+}
+@media screen and (max-width: 1350px) {
+    .imgFooter{
+        width: 2%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .footerSocialMedias div{
+        width: 30%;
+    }
+    .imgFooter{
+        width: 3%;
+    }
 }
