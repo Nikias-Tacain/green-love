@@ -1,0 +1,45 @@
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 5%;
+}
+.cardProductDiv{
+    width: 70%;
+    margin: auto;
+}
+.cardProductDivData div article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cardProductDivData div article h2{
+    font-size: 23px;
+}
+.divImage{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.divImage img{
+    width: 8%;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+.cardProductDivData div article p{
+    font-size: 30px;
+}
+.imgProduct img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;
+    transition: .3s
+}
+.imgProduct img:hover{
+    transform: scale(0.9);
+}

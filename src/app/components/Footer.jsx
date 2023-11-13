@@ -9,10 +9,10 @@ export default function Footer() {
             <h4>Contactanos</h4>
             <div>
                 <Link href='https://www.instagram.com/green_love_mat/'>
-                    <Image src='/instagram.svg' width={50} height={50}/>
+                    <Image src='/instagram.svg' width={50} height={50} loading="lazy" alt='Instagram'/>
                 </Link>
                 <Link href='https://api.whatsapp.com/send?phone=2364358085'>
-                    <Image src='/whatsapp.svg' width={50} height={50}/>
+                    <Image src='/whatsapp.svg' width={50} height={50} loading="lazy" alt='WhatsApp'/>
                 </Link>
             </div>
             <article>

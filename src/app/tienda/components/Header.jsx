@@ -1,34 +1,51 @@
+'use client'
 import React from 'react'
+import { useState } from 'react';
 import styles from './Header.module.css';
-import Image from 'next/image';
 import Link from 'next/link';
 export default function Header() {
+  const [mostrarCategorias, setMostrarCategorias] = useState(false);
+
+    const toggleCategorias = () => {
+        setMostrarCategorias(!mostrarCategorias);
+    };
   return (
-    <header className={styles.headerTienda}>
-        <Image src='/favicon.ico' width={150} height={140}/>
+    <header>
+          <section className={styles.headerTienda}>
+        <section className={styles.headerTiendaImg}>
+          <Link href='/'>
+            <img src="/favicon.ico" alt="logoTienda" />
+          </Link>
+        </section>
         <section className={styles.HeaderTiendaNavBarSection}>
             <ul className={styles.HeaderTiendaNavBarSectionList}>
                 <Link href='/'>
                     <li>Inicio</li>
                 </Link>
-                <li>Categorias ↓</li>
-                <Link href='/tienda/#footer'>
+                <li onClick={toggleCategorias}>Categorias ↓</li>
+                <Link href='#footer'>
                     <li>Contacto</li>
                 </Link>
             </ul>
+            
         </section>
         <input
-                  type="text"
-                  placeholder="Buscar productos"
-                  style={{
-                    padding: '10px',
-                    fontSize: '16px',
-                    border: '1px solid #ccc',
-                    borderRadius: '12px',
-                    marginBottom: '10px',
-                    width: '140px',
-                  }}
-                />
+          type="text"
+          placeholder="🔍 Buscar productos"
+          className={styles.inputSearch}
+        />
+        <img src="/bars-solid.svg" alt="" className={styles.barList}/>
+    </section>
+    {mostrarCategorias && (
+      <div className={styles.categoriasDeslizantes}>
+          <div>
+            <p>Categoría 1</p>
+            <p>Categoría 2</p>
+            <p>Categoría 3</p>
+          </div>
+      </div>
+  )}
     </header>
+
   )
 }

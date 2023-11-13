@@ -1,0 +1,18 @@
+.sectionProductInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imagesProductId{
+    display: flex;
+}
+.imagesProductId div{
+    display: flex;
+    flex-direction: column;
+}
+.intInfoProduct{
+    border: 1px solid;
+    border-radius: 12px;
+    width: 30%;
+    text-align: center;
+}

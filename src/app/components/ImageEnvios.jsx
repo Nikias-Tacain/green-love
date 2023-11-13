@@ -3,7 +3,7 @@ import styles from './PreviewViewCategory.module.css'
 export default function ImageEnvios() {
   return (
     <div className={styles.imageEnvios}>
-      <img src="/fondoEnvios.png" alt="" />
+      <img src="/fondoEnvios.png" alt="" loading="lazy"/>
     </div>
   )
 }
