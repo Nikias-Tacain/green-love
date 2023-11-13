@@ -25,7 +25,7 @@ const ProductList = () => {
     },[])
     const renderProducts = () => (
         products.map(item => (
-            <div className={styles.cardProduct}>
+            <div className={styles.cardProduct} key={item.id}>
                 <section key={item.id} className={styles.cardProductDiv}>
                     <div className={styles.divProductImg}>
                         <Link href={`/tienda/${item.id}`}>
