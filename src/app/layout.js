@@ -1,5 +1,6 @@
 import Footer from './components/Footer'
 import './globals.css'
+import { CarritoProvider } from './tienda/components/CarritoContext'
 import { SearchProvider } from './tienda/components/SearchContext'
 
 export const metadata = {
@@ -10,13 +11,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <SearchProvider>
-        <body>
-          {children}
-          <Footer />
-        </body>
-      </SearchProvider>
-
+      <body>
+        <CarritoProvider>
+          <SearchProvider>
+            {children}
+            <Footer />
+          </SearchProvider>
+        </CarritoProvider>
+      </body>
     </html>
   )
 }

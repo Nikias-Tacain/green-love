@@ -6,8 +6,11 @@ import { db } from '@/app/firebase/config';
 import styles from './CardTienda.module.css';
 import Image from 'next/image';
 import { useSearch } from './SearchContext';
+import { useCarrito } from './CarritoContext';
+import ShoppingCartModal from './ShoppingCart';
 
 const ProductList = () => {
+  const { handleButtonClick } = useCarrito();
   const [products, setProducts] = useState([]);
   const [sortBy, setSortBy] = useState('');
   const { searchTerm } = useSearch();
@@ -63,7 +66,7 @@ const ProductList = () => {
         <article className={styles.cardProductDivData}>
           <div>
             <div className={styles.divImage}>
-              <Image src="/cart-plus-solid.svg" alt="" height={100} width={100}/>
+              <Image src="/cart-plus-solid.svg" alt="" height={100} width={100} onClick={() => handleButtonClick(item)}/>
             </div>
             <Link href={`/tienda/${item.id}`}>
               <article>
@@ -79,6 +82,7 @@ const ProductList = () => {
   const filteredAndSortedProducts = filterAndSortProducts(products);
   return (
     <section>
+      <ShoppingCartModal/>
       <div className={styles.filtrosPage}>
         <label htmlFor="sort">Ordenar por: </label>
         <select id="sort" value={sortBy} onChange={handleSortChange}>

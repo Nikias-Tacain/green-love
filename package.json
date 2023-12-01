@@ -11,6 +11,9 @@
   "dependencies": {
     "@firebase/firestore": "^4.3.2",
     "@firebase/storage": "^0.11.2",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "firebase": "^10.6.0",
     "green-love": "github:Nikias-Tacain/green-love",
     "next": "13.5.6",
