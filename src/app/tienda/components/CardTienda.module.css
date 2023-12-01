@@ -28,9 +28,6 @@
     padding: 10px;
     border-radius: 20px;
 }
-.divImage img:hover{
-    width: 60px;
-}
 .cardProductDivData div article p{
     font-size: 30px;
 }
@@ -43,4 +40,13 @@
 }
 .imgProduct img:hover{
     transform: scale(0.9);
+}
+.filtrosPage{
+    text-align: center;
+    margin-top: 24px;
+}
+@media screen and (max-width: 600px) {
+    .cardProductDiv{
+        width: 100%;
+    }
 }

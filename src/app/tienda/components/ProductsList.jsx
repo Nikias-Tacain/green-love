@@ -9,8 +9,32 @@ import { useSearch } from './SearchContext';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
+  const [sortBy, setSortBy] = useState('');
   const { searchTerm } = useSearch();
 
+
+  const handleSortChange = (event) => {
+    setSortBy(event.target.value);
+  };
+
+  const filterAndSortProducts = (products) => {
+    // Filtrar por nombre
+    const filteredProducts = products.filter((product) =>
+      product.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    // Ordenar según la opción seleccionada
+    switch (sortBy) {
+      case 'alphabeticalAsc':
+        return filteredProducts.sort((a, b) => a.nombre.localeCompare(b.nombre));
+      case 'priceAsc':
+        return filteredProducts.sort((a, b) => a.precio - b.precio);
+      case 'priceDesc':
+        return filteredProducts.sort((a, b) => b.precio - a.precio);
+      default:
+        return filteredProducts;
+    }
+  };
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -52,12 +76,22 @@ const ProductList = () => {
       </section>
     </div>
   );
-  const filteredProducts = products.filter((product) => product.nombre.toLowerCase().includes(searchTerm.toLowerCase())
-);
+  const filteredAndSortedProducts = filterAndSortProducts(products);
   return (
-    <div className={styles.card}>
-      {filteredProducts.map(renderProduct)}
-    </div>
+    <section>
+      <div className={styles.filtrosPage}>
+        <label htmlFor="sort">Ordenar por: </label>
+        <select id="sort" value={sortBy} onChange={handleSortChange}>
+          <option value="">Seleccionar</option>
+          <option value="alphabeticalAsc">Alfabéticamente A-Z</option>
+          <option value="priceAsc">Precio (Menor a Mayor)</option>
+          <option value="priceDesc">Precio (Mayor a Menor)</option>
+        </select>
+      </div>
+      <div className={styles.card}>
+        {filteredAndSortedProducts.map(renderProduct)}
+      </div>
+    </section>
   );
 };
 

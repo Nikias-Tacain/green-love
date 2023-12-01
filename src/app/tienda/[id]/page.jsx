@@ -77,9 +77,9 @@ const Product = () => {
             ))}
           </div>
           {selectedImage ? (
-            <img src={selectedImage} alt="Selected Image" loading='lazy' style={{ width: '100%', height: '100%' }} />
+            <Image src={selectedImage} alt="Selected Image"  height={500} width={500}/>
           ) : (
-            <Image src={item.imagen[0]} alt={item?.nombre} height={700} width={700} priority/>
+            <Image src={item.imagen[0]} alt={item?.nombre} height={500} width={500} priority/>
           )}
         </div>
         <div className={styles.intInfoProduct}>

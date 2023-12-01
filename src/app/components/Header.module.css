@@ -1,9 +1,12 @@
 .fondoHeader{
     width: 80%;
+    text-align: center;
     margin: auto;
 }
 .fondoHeader img{
-    width: 100%;
+    object-fit: cover;
+    width: 93%;
+    height: auto;
     border-radius: 50px;
 }
 .marquee{
