@@ -16,9 +16,9 @@ export default function Footer() {
                 </Link>
             </div>
             <article>
-                <p><img src="/phone-solid.svg" alt="" className={styles.imgFooter}/> 2364358085</p>
-                <p><img src="/envelope-solid.svg" alt="" className={styles.imgFooter}/> matomasone@hotmail.com</p>
-                <p><img src="/house-solid.svg" alt="" className={styles.imgFooter}/> Juan Narbondo 390 &apos;2&apos;</p>
+                <p><Image src="/phone-solid.svg" alt="" className={styles.imgFooter} width={23} height={23}/> 2364358085</p>
+                <p><Image src="/envelope-solid.svg" alt="" className={styles.imgFooter} width={23} height={23}/> matomasone@hotmail.com</p>
+                <p><Image src="/house-solid.svg" alt="" className={styles.imgFooter} width={23} height={23}/> Juan Narbondo 390 &apos;2&apos;</p>
             </article>
         </section>
         <section className={styles.footerDerechos}>

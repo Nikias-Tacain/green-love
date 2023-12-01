@@ -1,4 +1,5 @@
-.headerTienda{
+/* General Styles */
+.headerTienda {
     background-color: rgba(150, 146, 146, 0.5);
     display: flex;
     justify-content: space-between;
@@ -6,24 +7,30 @@
     align-items: center;
     padding: 1rem;
 }
-.headerTiendaImg{
+
+.headerTiendaImg {
     width: 10%;
 }
-.headerTiendaImg img{
+
+.headerTiendaImg img {
     width: 100%;
     height: auto;
 }
-.HeaderTiendaNavBarSection{
+
+/* Navigation Bar Styles */
+.HeaderTiendaNavBarSection {
     width: 70%;
 }
-.HeaderTiendaNavBarSectionList{
+
+.HeaderTiendaNavBarSectionList {
     display: flex;
     justify-content: space-around;
     padding: 0;
     width: 100%;
     margin: auto;
 }
-.HeaderTiendaNavBarSectionList li{
+
+.HeaderTiendaNavBarSectionList li {
     padding: 15px 15px;
     font-size: 20px;
     border: 1px green solid;
@@ -32,19 +39,26 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.HeaderTiendaNavBarSectionList li:hover{
+
+.HeaderTiendaNavBarSectionList li:hover {
     background-color: rgba(50, 228, 80, 0.5);
 }
-.inputSearch{
+
+/* Search Input Styles */
+.inputSearch {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 12px;
     width: 200px;
 }
-.barList{
+
+/* Mobile Navigation Bar Icon */
+.barList {
     display: none;
 }
+
+/* Sliding Categories Styles */
 .categoriasDeslizantes {
     display: flex;
     background-color: rgba(150, 146, 146, 0.5);
@@ -54,11 +68,17 @@
     height: 200px;
     justify-content: center;
 }
-.categoriasDeslizantes div{
+
+.categoriasDeslizantes div {
     display: flex;
     width: 50%;
     justify-content: space-between;
     align-items: center;
+}
+
+.categoriasDeslizantes div p:hover {
+    color: green;
+    cursor: pointer;
 }
 
 @keyframes slideDown {
@@ -70,28 +90,57 @@
     }
 }
 
+/* Media Queries */
 @media screen and (min-width: 1400px) {
-    .headerTiendaImg{
+    .headerTiendaImg {
         width: 7%;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .headerTiendaImg {
+        width: 7%;
+    }
+
+    .categoriasDeslizantes div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .headerTiendaImg {
+        width: 10%;
+    }
+}
+
 @media screen and (max-width: 700px) {
-    .HeaderTiendaNavBarSection{
+    .HeaderTiendaNavBarSection {
         display: none;
     }
-    .headerTiendaImg{
+
+    .headerTiendaImg {
         width: 20%;
     }
-    .inputSearch{
+
+    .inputSearch {
         position: relative;
     }
-    .barList{
+
+    .barList {
         display: block;
-        width: 5%;
+        width: 7%;
         border: 1px solid;
         border-radius: 50px;
         padding: 12px;
         cursor: pointer;
+    }
 
+    .categoriasDeslizantes div {
+        padding: 12px;
+        width: 100%;
+    }
+
+    .labelCategorias{
+        text-decoration: underline;
     }
 }

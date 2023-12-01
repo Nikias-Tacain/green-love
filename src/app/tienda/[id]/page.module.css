@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 5%;
 }
 .imagesProductId{
     display: flex;
@@ -14,5 +15,53 @@
     border: 1px solid;
     border-radius: 12px;
     width: 30%;
+    height: 50%;
     text-align: center;
 }
+.spanTienda{
+    text-decoration: underline;
+}
+.spanTienda:hover{
+    color: rgb(126, 211, 126);
+}
+.relatedProducts{
+    display: flex;
+    text-align: center;
+    padding: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.relatedProduct {
+    margin-right: 50px;
+}
+.buttonAgregarCarrito{
+    border-radius: 20px;
+    background-color: rgb(105, 223, 105);
+    padding: 12px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1170px) {
+    .sectionProductInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intInfoProduct{
+        margin-top: 24px;
+        width: 75%;
+    }
+    .imagesProductId{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagesProductId div{
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
+    .imagesProductId img{
+        width: 100%;
+    }
+}
+  

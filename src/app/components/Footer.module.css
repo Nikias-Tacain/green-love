@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: #fff;
+    margin-top: 5%;
 }
 .footerSocialMedias{
     text-align: center;
@@ -18,9 +19,6 @@
 .footerDerechos{
     border-top: 1px solid #767a63;
     text-align: center;
-}
-.imgFooter{
-    width: 1%;
 }
 @media screen and (max-width: 1350px) {
     .imgFooter{

@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "firebase": "^10.5.0",
+    "@firebase/firestore": "^4.3.2",
+    "@firebase/storage": "^0.11.2",
+    "firebase": "^10.6.0",
+    "green-love": "github:Nikias-Tacain/green-love",
     "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-router-dom": "^6.20.0"
   },
   "devDependencies": {
     "eslint": "^8",

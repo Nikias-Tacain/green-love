@@ -1,18 +1,21 @@
 import Footer from './components/Footer'
 import './globals.css'
+import { SearchProvider } from './tienda/components/SearchContext'
 
 export const metadata = {
   title: 'Green Love',
-  description: '',
+  description: 'Tienda online. Naturaleza pura...',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body>
-        {children}
-        <Footer />
-      </body>
+      <SearchProvider>
+        <body>
+          {children}
+          <Footer />
+        </body>
+      </SearchProvider>
     </html>
   )
 }

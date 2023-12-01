@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   padding: 0;
   border: 0;
-  scroll-behavior: smooth;
   /* background-color: #89887c; */
   background-color: #8b8167;
   /* background-image: url(/fondoImage.jpg);
